@@ -5,5 +5,14 @@ main:
     url: /about/
   - title: "Archives"
     url: /archives/
+
+social:
   - title: "GitHub"
     url: https://github.com/berkgoksel
+    icon: "fa-brands fa-github"
+  - title: "LinkedIn"
+    url: https://uk.linkedin.com/in/berkgoksel
+    icon: "fa-brands fa-linkedin"
+  - title: "Twitter"
+    url: https://twitter.com/berkcgoksel
+    icon: "fa-brands fa-x-twitter"

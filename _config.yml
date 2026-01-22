@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Berk Cem Göksel
 author: Berk Cem Göksel
-description: Blog on cyber
+description: Software Security Engineer
 baseurl: "/"
 url: "https://berkgoksel.com"
 lang: en

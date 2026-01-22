@@ -13,6 +13,11 @@
         {% endif %}
         <a class="page-link" href="{{ url }}">{{ link.title }}</a>
       {% endfor %}
+      {% for link in site.data.navigation.social %}
+        <a class="page-link social-link" href="{{ link.url }}" title="{{ link.title }}" target="_blank" rel="noopener">
+          <i class="{{ link.icon }}"></i>
+        </a>
+      {% endfor %}
     </nav>
 
   </div>
