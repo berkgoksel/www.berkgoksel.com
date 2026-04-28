@@ -11,7 +11,7 @@ For my fuzzing environment I use a stack of Pixel8 devices which run under KASAN
 
 The Pixel 8 supports `MTE`. That means we can enable `KASAN_HW_TAGS`, drastically reducing the overhead brought by `KASAN_GENERIC` or `KASAN_SW_TAGS`. However mind that `KASAN_VMALLOC` will be disabled, and the last time I checked was only supported on `KASAN_GENERIC`. For my fuzzing work, I need `MTE` and `KCOV` to be enabled, and `KASLR` disabled simply because it makes comparing crash reports easier and removes some overhead. I also disable SELinux for my own convenience, which may not make sense depending on which context you're fuzzing from. 
 
-`KASAN_HW_TAGS` itself is upstream work by [Andrey Konovalov (xairy)](https://xairy.io/). The original arm64 patch series is at [https://lwn.net/Articles/833353/](https://lwn.net/Articles/833353/). If you're interested in debugging the Pixel kernel via GDB with GEF enabled, you can refer to his [article](https://xairy.io/articles/pixel-kgdb).
+`KASAN_HW_TAGS` itself is upstream work by [Andrey Konovalov (xairy)](https://xairy.io/) and Vincenzo Frascino — see the [introducing commit](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=6a63a63ff1ac2959706dba218d5e17f9ec721c0c) on git.kernel.org. If you're interested in debugging the Pixel kernel via GDB with GEF enabled, you can refer to Andrey's [article](https://xairy.io/articles/pixel-kgdb).
 
 
 ## Downloading the relevant factory image
